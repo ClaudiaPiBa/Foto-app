@@ -119,7 +119,7 @@ const llenarSelectConDispositivosDisponibles = () => {
           $canvas.width = $video.videoWidth;
           $canvas.height = $video.videoHeight + frameImg.height;
           
-          contexto.drawImage($video, 0, 0, $canvas.height - frameImg.height);
+          contexto.drawImage($video, 0, 0, $canvas.width, $canvas.height - frameImg.height);
 
           contexto.drawImage(frameImg, 0, $canvas.height - $video.height);
 
@@ -144,19 +144,3 @@ const llenarSelectConDispositivosDisponibles = () => {
     );
   };
 })();
-
-// Función para verificar el sistema operativo
-function verificarDispositivo() {
-  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-// Verificar si es iOS
-  if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-// Mostrar modal o alert
-    alert("La página no es compatible con dispositivos iOS.");
-  }
-}
-
-// Ejecutar la función al cargar la página
-window.onload = function() {
-  verificarDispositivo();
-};
