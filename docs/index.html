@@ -33,19 +33,19 @@
 
 		<div class="frame container">
 			<img id="frame-img" class="img-fluid imgDesk" src="assets/MASCARA.png" alt="Marco">
-			<img id="frame-img" class="img-fluid imgMob" src="assets/MASCARA.png" alt="Marco">
+			<img id="frame-img" class="img-fluid imgMob" src="assets/mascara_movil.svg" alt="Marco">
 			<img id="frame-canva" class="img-fluid" src="assets/marco_vendedor_autorizado.png" alt="Marco"
 				style="display: none;">
 			<img id="frame-canva2" class="img-fluid" src="assets/marco.png" alt="Marco" style="display: none;">
-
-				<video id="video" class="img-fluid" autoplay></video>
-
+			<img id="frame-canva-movil" class="img-fluid" src="assets/marco_movil.png" alt="Marco"
+				style="display: none;">
 
 			<div class="overlay">
+				<video id="video" class="img-fluid" width="389" height="514.7" autoplay></video>
 			</div>
 		</div>
 
-		<canvas id="canvas" style="display: block;"></canvas>
+		<canvas id="canvas" style="display: none;"></canvas>
 
 	</section>
 
@@ -60,7 +60,7 @@
 
 	// Función para cargar los scripts según el tipo de dispositivo
 	function cargarScriptsSegunDispositivo() {
-		if (window.innerWidth <= 525) {
+		if (window.innerWidth <= 430) {
 			console.log('mob')
 			const scriptMovil = document.createElement('script');
 			scriptMovil.src = 'script-movil.js';

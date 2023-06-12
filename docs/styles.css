@@ -41,7 +41,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            max-width: 389px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -70,12 +70,14 @@
       
 
 
-        @media (max-width:525px) {
+        @media (max-width:424px) {
             .imgDesk {
                 display: none !important;
             }
             .imgMob {
                 display: block !important;
+                width: 300px !important;
+                height: 325px !important;
             }
             
             #capture-btn{
@@ -101,8 +103,6 @@
                 justify-content: center;
                 align-items: center;
             }
-            video {
-                width: 300px !important;
-            }
+
 
         }
