@@ -1,1 +1,0 @@
-# tomar-foto-webcam-javascript
