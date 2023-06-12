@@ -113,7 +113,7 @@ const llenarSelectConDispositivosDisponibles = () => {
           // Pausar reproducción
           $video.pause();
 
-          const frameImg = document.getElementById('frame-canva2');
+          const frameImg = document.getElementById('frame-img');
 
           // Obtener contexto del canvas y dibujar sobre él
           let contexto = $canvas.getContext("2d");
