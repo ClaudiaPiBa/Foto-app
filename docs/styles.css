@@ -77,7 +77,6 @@
             .imgMob {
                 display: block !important;
                 width: 300px !important;
-                height: 325px !important;
             }
             
             #capture-btn{
@@ -103,6 +102,8 @@
                 justify-content: center;
                 align-items: center;
             }
-
+            video {
+                width: 300px !important;
+            }
 
         }
