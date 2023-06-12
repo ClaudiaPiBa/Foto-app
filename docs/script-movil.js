@@ -119,7 +119,7 @@ const llenarSelectConDispositivosDisponibles = () => {
           $canvas.width = $video.videoWidth;
           $canvas.height = $video.videoHeight + frameImg.height;
           
-          contexto.drawImage($video, 0, 0, $canvas.width, $canvas.height - frameImg.height);
+          contexto.drawImage($video, 0, 0, $canvas.height - frameImg.height);
 
           contexto.drawImage(frameImg, 0, $canvas.height - $video.height);
 
